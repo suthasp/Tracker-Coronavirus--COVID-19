@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width" , initial-scale="1.0">
+    <title>COVID-19 Tracker</title>
+    <link rel="shortcut icon" type="image/x-icon" href="https://www.6touch.com/covid19/favicon.ico">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-128258620-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-128258620-1');
+    </script>
+
+</head>
+
+<body>
+    <div class="wrapper">
+
+        <div class="statistic">
+            <div class="total_case_box">
+                <h2>
+                    <i class="fa fa-address-book" aria-hidden="true"></i> จำนวนผู้ติดเชื้อไวรัส COVID-19 ทั่วโลก
+                </h2>
+                <p style="font-size: 3rem;" id="total_cases"> </p>
+                <p style="font-size: 1rem;" id="now_date"> </p>
+                <!-- <p style="font-size: 1rem;"><a href="https://www.6touch.com/covid19/covid19thai/">รายงาน COVID-19 ประเทศไทย</a> </p> -->
+            </div>
+            <div class="box_wrapper">
+                <div class="box">
+                    <h2>
+                        <i class="fa fa-user-times" aria-hidden="true"></i> เสียชีวิตทั่วโลก
+                    </h2>
+                    <p style="font-size: 1.5rem;" id="total_death"> </p>
+                </div>
+
+                <div class="box">
+                    <h2>
+                        <b class="fa fa-refresh" aria-hidden="true"></b> รักษาหาย
+                    </h2>
+                    <p style="font-size: 1.5rem;" id="total_recovered"> </p>
+                </div>
+
+                <div class="box">
+                    <h2>
+                        <i class="fa fa-plus-circle" aria-hidden="true"></i> ติดเชื้อใหม่วันนี้
+                    </h2>
+                    <p style="font-size: 1.5rem;" id="new_case"> </p>
+                </div>
+
+                <div class="box">
+                    <h2>
+                        <i class="fa fa-user-circle-o" aria-hidden="true"></i> เสียชีวิตวันนี้
+                    </h2>
+                    <p style="font-size: 1.5rem;" id="new_death"> </p>
+                </div>
+
+
+            </div>
+        </div>
+
+        <!-- <table class="countries_stat" id="countries_stat"> -->
+        <table class="customers" id="countries_stat">
+
+            <tr>
+                <th>ลำดับที่</th>
+                <th>ประเทศ</th>
+                <th class="w3-amber">ติดเชื้อสะสม</th>
+                <th class="w3-black">เสียชีวิตรวม</th>
+                <th class="w3-orange">รักษาใน รพ.</th>
+                <th class="w3-deep-orange">อาการหนัก</th>
+                <!-- <th>%การตาย</th> -->
+                <th class="w3-yellow">ติดเชื้อใหม่</th>
+                <th class="w3-red">เสียชีวิตเพิ่มวันนี้</th>
+                <th class="w3-green">รักษาหายทั้งหมด</th>
+            </tr>
+
+        </table>
+
+        <script src="script.js"></script>
+</body>
